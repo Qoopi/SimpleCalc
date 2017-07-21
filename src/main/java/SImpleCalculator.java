@@ -39,7 +39,9 @@ public class SimpleCalculator {
                 case '^':
                     answer = Math.power(firstNumber, secondNumber);
                     break;
-
+                default:
+                    System.out.println("Братан ты ошибся.  Этот калькулятор слишком прост в нём нет таких операций. Попробуй ещй раз!");
+                    break;
             }
             System.out.println(answer);
             System.out.println("Do you want to exit y/n ?");
