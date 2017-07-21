@@ -23,7 +23,6 @@ public class SimpleCalculator {
             System.out.print("Please enter second number:");
             secondNumber = scanner.nextDouble();
 
-
             switch (operator) {
                 case '+':
                     answer = Math.add(firstNumber, secondNumber);
@@ -40,10 +39,8 @@ public class SimpleCalculator {
                 case '^':
                     answer = Math.power(firstNumber, secondNumber);
                     break;
-                case 'n':
-                    System.exit(0);
-            }
 
+            }
             System.out.println(answer);
             System.out.println("Do you want to exit y/n ?");
             exit = scanner.next();
