@@ -19,7 +19,7 @@ public class SimpleCalculator {
             System.out.println("Привет чувак, это супер простой калькулятор на дажве! Попробуй ;) ");
             System.out.println("Давай ка, введи первое число: ");
             firstNumber = scanner.nextDouble();
-            System.out.println("Что делать будем братан? Вычетать - / ? Складывать - + ? Дедить - /? Умножать - *? Или %.");
+            System.out.println("Что делать будем братан? Вычетать '-'? Складывать '+' ? Дедить '/'? Умножать '*'? Остаток от деления '%' или средне арефметическое чисел 'А'");
             System.out.println("Выберай вводи: ");
             operator = scanner.next().charAt(0);
             System.out.print("И давайка второе введём:");
@@ -46,7 +46,8 @@ public class SimpleCalculator {
                     case '^':
                         answer = Math.power(firstNumber, secondNumber);
                         break;
-
+                    case 'A':
+                        answer = Math.average(firstNumber,secondNumber);
                     default:
                         System.out.println("Братан ты ошибся.  Этот калькулятор слишком прост в нём нет таких операций. Попробуй ещй раз!");
                         break;
